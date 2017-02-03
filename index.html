@@ -5,6 +5,14 @@
   <strong>請輸入日期︰</strong>
   <input name="date" type="text">
   <input value="確定" type="submit">
+    function checkDate(str) {
+  var t = Date.parse(str);
+  if(isNaN(t)) {
+    alert('你輸入的不是日期');
+    return;
+  }
+  alert('你輸入的日期距離 1970 年 1 月 1 日 ' + (t / 1000) + ' 秒');
+}
 </p>  
       
 <script type="text/javascript">
